@@ -1,3 +1,5 @@
+import time
+st =time.time()
 def GCD(a,b):
     f=min(a,b)
     g=max(b,a)
@@ -33,3 +35,8 @@ m=int(input("enter the totient value : "))
 f=findNumbersWithTotientValue(m)
 
 print(f" All elements with totientValue of {m} are : \n {f}")
+
+
+et=time.time()
+
+print(f"total execution time for code is : {round(et-st,2)} Seconds")
