@@ -1,6 +1,7 @@
 # a basic function which is used in order to find out the greatest common divisor 
 # between two number and if gc of two numbers is 1 then the numbers are called as
 # relatively prime to each other 
+import time
 
 def gcd(a,b):
     f=max(a,b)
@@ -59,11 +60,20 @@ def multiplicativeInverse(n,m):
         t2=m+t2
     return t2
 
-n=23
-m=26
 
-print("-------------- Form n mod (m) --------------")
-print("enter value of n and m below ")
-n=eval(input("n : "))
-m=eval(input("m : "))
-print(f"multiplicative inverse  of {n} mod {m} : {multiplicativeInverse(n,m)}")
+def main():
+    startTime=time.time()
+    n=23
+    m=26
+
+    print("-------------- Form n mod (m) --------------")
+    print("enter value of n and m below ")
+    # n=eval(input("n : "))
+    # m=eval(input("m : "))
+    n=13;m=79291839
+    print(f"multiplicative inverse  of {n} mod {m} : {multiplicativeInverse(n,m)}")
+
+    endTime=time.time()
+    print("total time of execution : ",endTime-startTime," Seconds");
+
+main()

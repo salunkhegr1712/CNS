@@ -1,0 +1,87 @@
+we are going to find out the multiplicative inverse of form 
+
+n mod (m)
+and I will the multiplicative inverse for it and now we are going to run the multiplicative inverse on all tests
+
+1) n=11 m=26 
+result :
+	multiplicative inverse  of 11 mod 26 : 19
+	total time of execution :  0.0001499652862548828  Seconds
+
+2) n=31 m=35
+result : 
+	multiplicative inverse  of 31 mod 35 : 26
+	total time of execution :  0.00011301040649414062  Seconds
+
+3) n=45 m=53
+result : 
+	multiplicative inverse  of 45 mod 53 : 33
+	total time of execution :  0.0001804828643798828  Seconds
+
+3) n=11 m=53
+result :
+	multiplicative inverse  of 11 mod 53 : 29
+	total time of execution :  0.00016808509826660156  Seconds 
+
+4) n=31 m=95
+result :
+	multiplicative inverse  of 31 mod 95 : 46
+	total time of execution :  0.00016736984252929688  Seconds
+
+5) n=52 m=103
+result : 
+	multiplicative inverse  of 52 mod 103 : 2
+	total time of execution :  0.00012731552124023438  Seconds
+
+6) n=111 m=153
+result :
+	multiplicative inverse  of 113 mod 153 : 65
+	total time of execution :  0.00015807151794433594  Seconds
+
+7) n=111 m=205
+result :
+	multiplicative inverse  of 113 mod 257 : 116
+	total time of execution :  0.0001442432403564453  Seconds
+
+8) n=326 m=589
+result :
+	multiplicative inverse  of 326 mod 589 : 374
+	total time of execution :  0.0002105236053466797  Seconds
+
+9) n=124 m=679
+result :
+	multiplicative inverse  of 124 mod 679 : 115
+	total time of execution :  0.00015425682067871094  Seconds
+
+10) n=167 m=1081
+result : 
+	multiplicative inverse  of 167 mod 1081 : 602
+	total time of execution :  0.0001342296600341797  Seconds
+
+11) n=1081 m=6789
+result :
+	multiplicative inverse  of 1081 mod 6789 : 829
+	total time of execution :  0.0005450248718261719  Seconds
+
+12) n=6789 m=12359
+result : multiplicative inverse  of 6789 mod 12359 : 3437
+	total time of execution :  0.002326488494873047  Seconds
+
+13) n=12359 m=891023
+result : 
+	multiplicative inverse  of 12359 mod 891023 : 124364
+	total time of execution :  0.004496335983276367  Seconds
+	
+14) n=34891 m=7819137
+result : multiplicative inverse  of 34891 mod 7819137 : 2031259
+	total time of execution :  0.008925199508666992  Seconds
+
+15) n=789227 m=792918397
+result : multiplicative inverse  of 789227 mod 79291839 : 58256912
+	total time of execution :  0.10175871849060059  Seconds
+
+16) n=13 m=792918397
+result : multiplicative inverse  of 13 mod 79291839 : 24397489
+	total time of execution :  0.00015091896057128906  Seconds
+
+
