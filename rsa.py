@@ -11,10 +11,8 @@
 
 # first we will write a function to check that a number is prime or not 
 
-from math import gcd
-from operator import mod
-from platform import python_implementation
-from random import randint
+import random 
+import math
 def isPrime(n):
     if n==1 or n==0:
         return False
@@ -138,28 +136,34 @@ def rsaValues(p,q):
     phi=(p-1)*(q-1)
     l=[]
     k=2
+    e=0
     zz=findTotient(p*q)
     print(zz)
     while(k<phi):
-        if(gcd(k,zz)==1):
+    # e must be co-prime to phi and
+    # smaller than phi.
+        if(GCD(k, phi) == 1):
             l.append(k)
+        
         k+=1
     # print(l)
-    e=l[randint(0,len(l)-1)]
+    g=(len(l)//2) -1
+    e=l[random.randint(0,g)]
+    k=2
     d=(k*phi + 1) / e
     return e,d
 
 # print(multiplicativeInverse(10,46))
-def RSA(PP,p,q):
+def rsaEncrypt(p,q):
     n=p*q
     e,d=rsaValues(p,q)
-    print("original msg is : ",PP)
-    gg=e%n
-    CC=PP**gg
-    print("cipher text is : ",CC)
-    gg=d%n
-    PP=CC**gg
-    print("decrypted msg is : ",PP)
-
-RSA(10,17,13)
+    p=int(input("enter your no o encrypt"))
+    print("original msg is : ",p)
+    c = pow(p, e)
+    c = math.fmod(c, n)
+    print("cipher text is : ",c)
+    m = pow(c, d)
+    m = math.fmod(m, n)
+    print("decrypted msg is : ",m)
+    return c,d
 
